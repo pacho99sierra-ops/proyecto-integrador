@@ -1,0 +1,66 @@
+      .Contenedor {
+        width: 500px;
+        border: rgb(16, 20, 16) 1px solid;
+        border-radius: 4px;
+        background-color: #f2f2f2;
+      }
+      .Titulo-formulario {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .Formulario {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        padding: 20px;
+        gap: 10px;
+      }
+      .Contenedor-formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .Contenedor-formulario input {
+        width: 300px;
+        border: 1px solid #0d0d0d;
+        border-radius: 4px;            
+      }
+      .Division-formulario{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .Botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+        padding: 15px;
+      }
+      .btn-guardar {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .btn-cancelar {
+        background-color: #f44336;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      body{
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #595b5e;
+      }
+      
