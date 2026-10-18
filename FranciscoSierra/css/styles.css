@@ -212,7 +212,8 @@ tbody tr {
   color: white;
   text-decoration: none;
   font-weight: bold;
-}.filtros {
+}
+.filtros {
   display: flex;
   gap: 10px;
   margin-bottom: 18px;
