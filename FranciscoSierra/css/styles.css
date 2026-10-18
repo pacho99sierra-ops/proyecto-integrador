@@ -212,4 +212,18 @@ tbody tr {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}.filtros {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.filtros .Buscador {
+  flex: 1;
+  margin-bottom: 0;
+}
+.filtro-estado {
+  padding: 12px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 14px;
 }

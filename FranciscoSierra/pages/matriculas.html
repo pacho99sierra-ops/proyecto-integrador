@@ -47,7 +47,15 @@
         </a>
       </div>
 
-      <input class="Buscador" type="text" placeholder="Buscar matricula..." />
+      <div class="filtros">
+        <input class="Buscador" type="text" placeholder="Buscar matrícula..." />
+        <select class="filtro-estado">
+          <option value="">Todos los estados</option>
+          <option value="ACTIVA">Activa</option>
+          <option value="COMPLETADA">Completada</option>
+          <option value="CANCELADA">Cancelada</option>
+        </select>
+      </div>
       <section class="espacio-tabla">
         <table class="tabla">
           <thead>
@@ -93,19 +101,6 @@
               <td>Ingles nivel 1</td>
               <td>2026-07-21</td>
               <td>ACTIVO</td>
-              <td>
-                <a class="editar" href="../forms/matriculas-form.html#editar"
-                  >Editar</a
-                >
-                <a class="eliminar" href="#eliminado">Eliminar</a>
-              </td>
-            </tr>
-            <tr>
-              <td>Luis Alberto</td>
-              <td>Jimenez Perez</td>
-              <td>Administracion financiera nivel 3</td>
-              <td>2026-07-21</td>
-              <td>COMPLETADO</td>
               <td>
                 <a class="editar" href="../forms/matriculas-form.html#editar"
                   >Editar</a
