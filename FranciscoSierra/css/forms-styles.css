@@ -34,7 +34,8 @@
   gap: 10px;
 }
 .Contenedor-formulario input,
-.Contenedor-formulario textarea {
+.Contenedor-formulario textarea,
+.Contenedor-formulario select {
   width: 65%;
   border: 1px solid #0d0d0d;
   border-radius: 4px;

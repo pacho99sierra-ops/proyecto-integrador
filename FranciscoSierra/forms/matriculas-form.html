@@ -12,56 +12,45 @@
       <h1>Sistema de Gestión</h1>
     </header>
     <div class="Contenedor">
-      <a href="../pages/estudiantes.html" class="cerrar">✖</a>
-      <h2 class="Titulo-formulario">Nuevo estudiante</h2>
-      <form class="Formulario" action="../pages/estudiantes.html">
+      <a href="../pages/matriculas.html" class="cerrar">✖</a>
+      <h2 class="Titulo-formulario">Nueva matricula</h2>
+      <form class="Formulario" action="../pages/matriculas.html">
         <div class="Contenedor-formulario">
           <div class="Division-formulario">
-            <label for="nombre">Nombre:</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Nombre"
-              required
-            />
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso" required>
+              <option value="" selected disabled>Seleccione un curso</option>
+              <option value="ING1">Inglés nivel 1</option>
+              <option value="AFIN3">Administración Financiera nivel 3</option>
+            </select>
           </div>
           <div class="Division-formulario">
-            <label for="apellido">Apellido:</label>
-            <input
-              type="text"
-              id="apellido"
-              name="apellido"
-              placeholder="Apellido"
-              required
-            />
+            <label for="estudiante">Estudiante:</label>
+            <select id="estudiante" name="estudiante" required>
+              <option value="" selected disabled>
+                Seleccione un estudiante
+              </option>
+              <option value="1">Francisco Javier Sierra Restrepo</option>
+              <option value="2">Carmen Maritza Restrepo Sanchez</option>
+              <option value="3">Juan Felipe Ramirez Botero</option>
+            </select>
           </div>
           <div class="Division-formulario">
-            <label for="correo">Correo:</label>
-            <input
-              type="email"
-              id="correo"
-              name="correo"
-              placeholder="Correo electronico"
-              required
-            />
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+              <option value="ACTIVA" selected>Activa</option>
+              <option value="COMPLETADA">Completada</option>
+              <option value="CANCELADA">Cancelada</option>
+            </select>
           </div>
           <div class="Division-formulario">
-            <label for="celular">Celular:</label>
-            <input
-              type="tel"
-              id="celular"
-              name="celular"
-              placeholder="Celular"
-              required
-              pattern="[0-9]{10}"
-              title="Debe tener 10 dígitos"
-            />
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required />
           </div>
         </div>
         <div class="Botones">
           <button type="submit" class="btn-guardar">Guardar</button>
-          <a href="../pages/estudiantes.html" class="btn-cancelar">Cancelar</a>
+          <a href="../pages/matriculas.html" class="btn-cancelar">Cancelar</a>
         </div>
       </form>
     </div>
