@@ -10,28 +10,28 @@
 <body>
     <div class="Contenedor">
         <form Class="Formulario">
+            <a href="../pages/Estudiantes.html" class="cerrar">✖</a>
             <h1 class="Titulo-formulario">Formulario de Estudiantes</h1>
             <div class="Contenedor-formulario">
                 <div class="Division-formulario">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
                 </div>
                 <div class="Division-formulario">
                     <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" placeholder="Apellido" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
                 </div>
                 <div class="Division-formulario">
                     <label for="correo">Correo:</label>
-                    <input type="email" name="correo" placeholder="Correo electronico" required>
+                    <input type="email" id="correo" name="correo" placeholder="Correo electronico" required>
                 </div>
                 <div class="Division-formulario">
                     <label for="celular">Celular:</label>
-                    <input type="text" name="celular" placeholder="Celular" required>
-                </div>
+                    <input type="tel" id="celular" name="celular" placeholder="Celular" required pattern="[0-9]{10}" title="Debe tener 10 dígitos" />
             </div>
             <div class="Botones">
-                <button type="submit" class="btn-guardar">Guardar</button>
-                <button type="reset" class="btn-cancelar">Cancelar</button>
+                <button type="submit" class="btn-guardar"><a href="../pages/Estudiantes.html">Guardar</a></button>
+                <button type="reset" class="btn-cancelar"><a href="../pages/Estudiantes.html">Cancelar</a></button>
             </div>
         </form>
     </div>    
