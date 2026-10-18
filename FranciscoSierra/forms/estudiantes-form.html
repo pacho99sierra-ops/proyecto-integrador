@@ -1,39 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/forms-styles.css" />
     <title>Formulario de Estudiantes</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header class="form-header">
+      <h1>Sistema de Gestión</h1>
+    </header>
     <div class="Contenedor">
-        <form Class="Formulario">
-            <a href="../pages/Estudiantes.html" class="cerrar">✖</a>
-            <h1 class="Titulo-formulario">Formulario de Estudiantes</h1>
-            <div class="Contenedor-formulario">
-                <div class="Division-formulario">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="Division-formulario">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
-                </div>
-                <div class="Division-formulario">
-                    <label for="correo">Correo:</label>
-                    <input type="email" id="correo" name="correo" placeholder="Correo electronico" required>
-                </div>
-                <div class="Division-formulario">
-                    <label for="celular">Celular:</label>
-                    <input type="tel" id="celular" name="celular" placeholder="Celular" required pattern="[0-9]{10}" title="Debe tener 10 dígitos" />
-            </div>
-            <div class="Botones">
-                <button type="submit" class="btn-guardar"><a href="../pages/Estudiantes.html">Guardar</a></button>
-                <button type="reset" class="btn-cancelar"><a href="../pages/Estudiantes.html">Cancelar</a></button>
-            </div>
-        </form>
-    </div>    
-</body>
+      <a href="../pages/estudiantes.html" class="cerrar">✖</a>
+      <h1 class="Titulo-formulario">Nuevo estudiante</h1>
+      <form class="Formulario" action="../pages/estudiantes.html">
+        <div class="Contenedor-formulario">
+          <div class="Division-formulario">
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div class="Division-formulario">
+            <label for="apellido">Apellido:</label>
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Apellido"
+              required
+            />
+          </div>
+          <div class="Division-formulario">
+            <label for="correo">Correo:</label>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              placeholder="Correo electronico"
+              required
+            />
+          </div>
+          <div class="Division-formulario">
+            <label for="celular">Celular:</label>
+            <input
+              type="tel"
+              id="celular"
+              name="celular"
+              placeholder="Celular"
+              required
+              pattern="[0-9]{10}"
+              title="Debe tener 10 dígitos"
+            />
+          </div>
+        </div>
+        <div class="Botones">
+          <button type="submit" class="btn-guardar">Guardar</button>
+          <a href="../pages/estudiantes.html" class="btn-cancelar">Cancelar</a>
+        </div>
+      </form>
+    </div>
+    <footer class="form-footer">
+      <p>Francisco Javier Sierra Restrepo</p>
+      <p>fjsierrare@cesde.net</p>
+    </footer>
+  </body>
 </html>

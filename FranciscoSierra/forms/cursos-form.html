@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/forms-styles.css" />
     <title>Formulario de Cursos</title>
 </head>
+
 <body>
-    
+    <div class="Contenedor">
+        <form Class="Formulario">
+            <a href="../pages/Cursos.html" class="cerrar">✖</a>
+            <h1 class="Titulo-formulario">Formulario de Cursos</h1>
+            <div class="Contenedor-formulario">
+                <div class="Division-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="Division-formulario">
+                    <label for="descripcion">Descripción:</label>
+                    <input type="text" id="descripcion" name="descripcion" placeholder="Descripción" required>
+                </div>
+                <div class="Division-formulario">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Correo electronico" required>
+                </div>
+                <div class="Division-formulario">
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular" placeholder="Celular" required pattern="[0-9]{10}" title="Debe tener 10 dígitos" />
+            </div>
+            <div class="Botones">
+                <button type="submit" class="btn-guardar"><a href="../pages/Estudiantes.html">Guardar</a></button>
+                <button type="reset" class="btn-cancelar"><a href="../pages/Estudiantes.html">Cancelar</a></button>
+            </div>
+        </form>
+    </div>    
 </body>
 </html>
