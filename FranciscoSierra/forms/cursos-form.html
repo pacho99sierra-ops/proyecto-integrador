@@ -1,39 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/forms-styles.css" />
     <title>Formulario de Cursos</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header class="form-header">
+      <h1>Sistema de Gestión</h1>
+    </header>
     <div class="Contenedor">
-        <form Class="Formulario">
-            <a href="../pages/Cursos.html" class="cerrar">✖</a>
-            <h1 class="Titulo-formulario">Formulario de Cursos</h1>
-            <div class="Contenedor-formulario">
-                <div class="Division-formulario">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="Division-formulario">
-                    <label for="descripcion">Descripción:</label>
-                    <input type="text" id="descripcion" name="descripcion" placeholder="Descripción" required>
-                </div>
-                <div class="Division-formulario">
-                    <label for="correo">Correo:</label>
-                    <input type="email" id="correo" name="correo" placeholder="Correo electronico" required>
-                </div>
-                <div class="Division-formulario">
-                    <label for="celular">Celular:</label>
-                    <input type="tel" id="celular" name="celular" placeholder="Celular" required pattern="[0-9]{10}" title="Debe tener 10 dígitos" />
+      <a href="../pages/cursos.html" class="cerrar">✖</a>
+      <h2 class="Titulo-formulario">Nuevo curso</h2>
+      <form class="Formulario" action="../pages/cursos.html">
+        <div class="Contenedor-formulario">
+          <div class="Division-formulario">
+            <label for="codigo">Código:</label>
+            <input
+              type="text"
+              id="codigo"
+              name="codigo"
+              placeholder="Ej: ING1"
+              required
+              pattern="[A-Z0-9]{3,6}"
+              title="De 3 a 6 caracteres, mayúsculas y números"
+            />
+          </div>
+            <div class="Division-formulario">
+                <label for="nombre">Nombre del curso:</label>
+                <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Nombre del curso"
+                required
+                />
             </div>
-            <div class="Botones">
-                <button type="submit" class="btn-guardar"><a href="../pages/Estudiantes.html">Guardar</a></button>
-                <button type="reset" class="btn-cancelar"><a href="../pages/Estudiantes.html">Cancelar</a></button>
-            </div>
-        </form>
-    </div>    
-</body>
+          <div class="Division-formulario">
+            <label for="descripcion">Descripción:</label>
+            <textarea
+              id="descripcion"
+              name="descripcion"
+              rows="4"
+              placeholder="Descripción del curso"
+            ></textarea>
+          </div>
+          <div class="Division-formulario">
+            <label for="capacidad">Capacidad:</label>
+            <input
+              type="number"
+              id="capacidad"
+              name="capacidad"
+              placeholder="Máx. estudiantes"
+              required
+              min="1"
+              max="50"
+            />
+          </div>
+        </div>
+        <div class="Botones">
+          <button type="submit" class="btn-guardar">Guardar</button>
+          <a href="../pages/cursos.html" class="btn-cancelar">Cancelar</a>
+        </div>
+      </form>
+    </div>
+    <footer class="form-footer">
+      <p>Francisco Javier Sierra Restrepo</p>
+      <p>fjsierrare@cesde.net</p>
+    </footer>
+  </body>
 </html>
