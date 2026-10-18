@@ -20,6 +20,15 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
+.titulo-editar {
+  display: none;
+}
+#editar:target .titulo-nuevo {
+  display: none;
+}
+#editar:target .titulo-editar {
+  display: block;
+}
 .Formulario {
   display: flex;
   flex-direction: column;
