@@ -90,8 +90,8 @@
   border-color: #2563eb;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
-.CONtenedor-formulario input::placeholder,
-.CONtenedor-formulario textarea::placeholder {
+.Contenedor-formulario input::placeholder,
+.CContenedor-formulario textarea::placeholder {
   color: #999;
   font-style: italic;
   opacity: 1;
