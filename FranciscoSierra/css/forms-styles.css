@@ -6,6 +6,16 @@
   background-color: #f2f2f2;
   position: relative;
 }
+.Contenedor::before {
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #f54927;
+  border-radius: 3px 3px 0 0;
+}
 .cerrar {
   position: absolute;
   top: 10px;
