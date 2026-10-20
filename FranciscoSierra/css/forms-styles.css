@@ -24,6 +24,10 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
+.Titulo-formulario::first-letter {
+  color: #f54927;
+  font-size: 1.3em;
+}
 .titulo-editar {
   display: none;
 }
