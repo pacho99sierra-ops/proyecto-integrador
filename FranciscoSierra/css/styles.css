@@ -135,6 +135,9 @@ td:last-child {
 tbody tr {
   border-top: 1px solid #e5e7eb;
 }
+tbody tr:nth-child(even) td {
+  background-color: #ffb366;
+}
 .editar {
   color: blue;
   text-decoration: none;
