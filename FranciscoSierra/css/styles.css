@@ -28,6 +28,13 @@
 .nav a {
   color: white;
   text-decoration: none;
+  transition:
+    padding-left 0.2s ease,
+    color 0.2s ease;
+}
+.nav a:hover {
+  padding-left: 8px;
+  color: #ffe066;
 }
 .nav a.activo {
   font-weight: bold;
@@ -85,6 +92,7 @@
   padding: 10px 18px;
   border-radius: 6px;
   font-weight: 600;
+  transition: background 0.2s ease;
 }
 .btn-principal:hover {
   background: #1d4ed8;
@@ -132,6 +140,10 @@ tbody tr {
   color: red;
   text-decoration: none;
 }
+.editar:hover,
+.eliminar:hover {
+  text-decoration: underline;
+}
 
 .Footer-main {
   margin-left: 30px;
@@ -151,6 +163,13 @@ tbody tr {
   padding: 20px;
   min-height: 110px;
   border: 1px solid #e5e7eb;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .card h2 {
   font-size: 24px;
