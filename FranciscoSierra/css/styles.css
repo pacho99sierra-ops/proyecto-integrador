@@ -107,6 +107,11 @@
   margin-bottom: 18px;
   font-size: 14px;
 }
+.Buescador::placeholder {
+  color: #999;
+  font-style: italic;
+  opacity: 1;
+}
 .tabla {
   flex: 1;
 }
