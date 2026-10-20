@@ -240,6 +240,7 @@ tbody tr:nth-child(even) td {
 }
 #eliminado:target {
   display: flex;
+  animation: desvanecer 4s forwards;
 }
 .aviso-cerrar {
   color: white;
@@ -260,4 +261,21 @@ tbody tr:nth-child(even) td {
   border: 1px solid #999;
   border-radius: 8px;
   font-size: 14px;
+}
+@keyframes desvanecer {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateY(-20px);
+  }
 }
