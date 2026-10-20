@@ -127,7 +127,11 @@ td {
   padding: 16px;
   background-color: orange;
 }
-
+th:last-child,
+td:last-child {
+  text-align: center;
+  white-space: nowrap;
+}
 tbody tr {
   border-top: 1px solid #e5e7eb;
 }
