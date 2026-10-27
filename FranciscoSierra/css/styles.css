@@ -127,6 +127,7 @@ table {
   border: 1px solid #e5e7eb;
   width: 100%;
   border-collapse: collapse;
+  min-width: 40rem;
 }
 th {
   background-color: red;
@@ -170,6 +171,12 @@ tbody tr:nth-child(even) td {
 }
 .espacio-tabla {
   flex: 1;
+  overflow-x: auto;
+  border-radius: 12px;
+}
+.espacio-tabla:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
 }
 .Todas-las-card {
   display: grid;
