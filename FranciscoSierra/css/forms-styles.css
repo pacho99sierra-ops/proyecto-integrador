@@ -1,6 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .Contenedor {
   width: 100%;
-  max-width: 500px;
+  max-width: 31.25rem;
   border: rgb(16, 20, 16) 1px solid;
   border-radius: 4px;
   background-color: #f2f2f2;
@@ -55,7 +60,7 @@
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
-  padding: 20px;
+  padding: clamp(1rem, 4vw, 1.25rem);
   gap: 10px;
 }
 .Contenedor-formulario {
@@ -147,4 +152,28 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #595b5e;
+  padding: clamp(1rem, 4vw, 2rem);
+}
+@media (max-width: 520px) {
+  .Division-formulario {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .Contenedor-formulario input,
+  .Contenedor-formulario textarea,
+  .Contenedor-formulario select {
+    width: 100%;
+  }
+
+  .Botones {
+    flex-direction: column;
+    padding: 0.5rem 0 0;
+  }
+
+  .btn-guardar,
+  .btn-cancelar {
+    width: 100%;
+    text-align: center;
+  }
 }
