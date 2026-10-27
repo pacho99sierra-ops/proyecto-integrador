@@ -64,7 +64,7 @@
   background-color: #8c8c68;
   display: flex;
   flex-direction: column;
-  padding: clamp(0.75rem, 2vw, 1.25rem);;
+  padding: clamp(0.75rem, 2vw, 1.25rem);
 }
 .main-div {
   display: flex;
@@ -290,5 +290,30 @@ tbody tr:nth-child(even) td {
   100% {
     opacity: 0.5;
     transform: translateY(-20px);
+  }
+}
+@media (max-width: 760px) {
+  .Body {
+    flex-direction: column;
+  }
+
+  .Sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    margin: 0 1.25rem 1.25rem;
+  }
+
+  .Sidebar-footer {
+    display: none;
+  }
+
+  .Todas-las-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
