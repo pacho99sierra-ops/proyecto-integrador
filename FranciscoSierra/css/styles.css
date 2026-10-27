@@ -132,12 +132,12 @@ table {
 th {
   background-color: red;
   text-align: left;
-  padding: 16px;
+  padding: clamp(0.625rem, 2vw, 1rem);
   font-weight: 700;
 }
 
 td {
-  padding: 16px;
+  padding: clamp(0.625rem, 2vw, 1rem);
   background-color: orange;
 }
 th:last-child,
@@ -166,7 +166,7 @@ tbody tr:nth-child(even) td {
 }
 
 .Footer-main {
-  margin-left: clamp(1rem, 3vw, 1.875rem);
+  margin: 1.5rem clamp(1rem, 3vw, 1.875rem) 0;
   text-align: center;
 }
 .espacio-tabla {
@@ -263,7 +263,7 @@ tbody tr:nth-child(even) td {
 .filtros {
   display: flex;
   gap: 10px;
-  margin-bottom: 18px;
+  margin-bottom: 0;
 }
 .filtros .Buscador {
   flex: 1;
@@ -274,6 +274,11 @@ tbody tr:nth-child(even) td {
   border: 1px solid #999;
   border-radius: 8px;
   font-size: 14px;
+}
+.Buscador,
+.filtros,
+.espacio-tabla {
+  margin-inline: clamp(1rem, 3vw, 1.875rem);
 }
 @keyframes desvanecer {
   0% {
@@ -300,6 +305,21 @@ tbody tr:nth-child(even) td {
   .Sidebar {
     width: 100%;
     min-height: auto;
+  }
+
+    .tittle-sidebar {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1rem 1.25rem;
+  }
+
+  .nav a:hover {
+    padding-left: 0;
   }
 
   .menu {
@@ -344,5 +364,16 @@ tbody tr:nth-child(even) td {
     top: 1rem;
     left: 1rem;
     right: 1rem;
+  }
+
+    .card {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card h2 {
+    margin-top: 0;
   }
 }
