@@ -317,3 +317,32 @@ tbody tr:nth-child(even) td {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+@media (max-width: 520px) {
+  .Header-main {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-principal {
+    text-align: center;
+  }
+
+  .filtros {
+    flex-direction: column;
+  }
+
+  .Todas-las-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .menu {
+    gap: 0.5rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .aviso {
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+}
