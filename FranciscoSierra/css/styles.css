@@ -180,14 +180,15 @@ tbody tr:nth-child(even) td {
 }
 .Todas-las-card {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.25rem);
 }
 .card {
   background-color: rgb(222, 210, 210);
   border-radius: 12px;
-  padding: 20px;
-  min-height: 110px;
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.25rem);
+  min-height: 6.875rem;
   border: 1px solid #e5e7eb;
   transition:
     transform 0.3s ease,
